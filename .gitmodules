@@ -1,0 +1,3 @@
+[submodule "Website/mine-sweeper-v2"]
+	path = Website/mine-sweeper-v2
+	url = https://github.com/brynaytes/mine-sweeper-v2

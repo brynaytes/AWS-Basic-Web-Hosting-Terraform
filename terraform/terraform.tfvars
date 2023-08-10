@@ -1,0 +1,1 @@
+site_name = "mine-sweeper-2"

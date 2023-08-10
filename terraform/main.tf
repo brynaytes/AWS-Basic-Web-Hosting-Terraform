@@ -1,16 +1,13 @@
+locals {
+  s3_bucket_name = "${var.site_name}-site-assets"
+}
+
 resource "aws_s3_bucket" "site_bucket" {
-    bucket = "tf-mine-sweeper-site-assets"
+    bucket =  "${var.site_name}-site-assets"
     tags = {
         Name = "Terraform hosting test"
     }
 }
-
-locals {
-  s3_origin_id = "main-origin"
-  project_name = "mine sweeper"
-  s3_bucket_name = "tf-mine-sweeper-site-assets"
-}
-
 
 resource "aws_cloudfront_distribution" "distribution"  {
     origin {
@@ -50,7 +47,7 @@ resource "aws_cloudfront_distribution" "distribution"  {
 }
 
 resource "aws_cloudfront_origin_access_control" "oac" {
-  name = "OAC for ${local.project_name}"
+  name = "OAC for ${var.site_name}"
   description = ""
   origin_access_control_origin_type = "s3"
   signing_behavior = "always"

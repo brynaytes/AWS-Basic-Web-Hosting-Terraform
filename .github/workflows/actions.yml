@@ -41,7 +41,7 @@ jobs:
     
     - name: TF Apply
       working-directory:  terraform
-      run: terraform apply  
+      run: terraform apply  -auto-approve
       
 
   NodeBuild:

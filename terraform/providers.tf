@@ -1,4 +1,13 @@
 terraform {
+  cloud {
+    organization = "brynaytes"
+
+    workspaces {
+      name = "mine-sweeper-git"
+    }
+  }
+
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"

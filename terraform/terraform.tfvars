@@ -1,1 +1,1 @@
-site_name = "mine-sweeper-3"
+site_name = "mine-sweeper-4"

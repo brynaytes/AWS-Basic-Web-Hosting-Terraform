@@ -1,10 +1,9 @@
 terraform {
-  cloud {
-    organization = "brynaytes"
-
-    workspaces {
-      name = "mine-sweeper-git"
-    }
+  backend "s3" {
+    bucket = "terraform-state-bryn-test"
+    key    = "AWS-Basic-Web-Hosting-Terraform"
+    region  = "us-east-1"
+  
   }
 
 

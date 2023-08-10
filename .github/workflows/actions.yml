@@ -30,7 +30,10 @@ jobs:
         
     - uses: hashicorp/setup-terraform@v2
     
-    - run: terraform init
+    - name: TF Init
+      run: terraform init
+      working-directory:  terraform
+
         
     - name: TF Plan
       working-directory:  terraform

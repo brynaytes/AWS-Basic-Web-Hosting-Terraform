@@ -71,4 +71,4 @@ jobs:
       run: npm run build
 
     - name: Upload files
-      run:  aws s3 cp Website/mine-sweeper-v2/build s3://${env.PROJECT_NAME}-site-assets/ --recursive
+      run:  aws s3 cp Website/mine-sweeper-v2/build s3://$PROJECT_NAME-site-assets/ --recursive

@@ -1,11 +1,11 @@
 variable "s3_bucket_name" {
-    type = string 
+  type = string
 }
 
 variable "s3_bucket_id" {
-    type  = string
+  type = string
 }
 
 variable "cloudfront_arn" {
-    type = string
+  type = string
 }

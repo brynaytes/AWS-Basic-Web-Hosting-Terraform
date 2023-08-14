@@ -1,10 +1,10 @@
 variable "site_name" {
-    type = string
-    description = "Name of the site."
+  type        = string
+  description = "Name of the site."
 }
 
 variable "site_bucket_id" {
-    type = string
+  type = string
 }
 
 variable "site_bucket_domain_name" {

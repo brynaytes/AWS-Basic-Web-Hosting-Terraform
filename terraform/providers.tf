@@ -2,8 +2,8 @@ terraform {
   backend "s3" {
     bucket = "terraform-state-bryn-test"
     key    = "AWS-Basic-Web-Hosting-Terraform"
-    region  = "us-east-1"
-  
+    region = "us-east-1"
+
   }
 
 
@@ -18,5 +18,5 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-east-1"
+  region = "us-east-1"
 }
